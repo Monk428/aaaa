@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="user")
+@Table(name = "user")
 public class User implements Serializable {
 
     @Id
@@ -12,17 +12,38 @@ public class User implements Serializable {
     @Column(name = "t_id")
     private Long id;
 
-    @Column(name = "t_username")
+    @Column(name = "t_username",nullable = false)
     private String name;
 
-    @Column(name = "t_password")
+    @Column(name = "t_password",nullable = false)
     private String password;
+
+    @Column(name = "t_salt")
+    private String salt;
 
     @Column(name = "t_email")
     private String email;
 
     @Column(name = "t_mobile")
     private String mobile;
+
+    @Column(name = "t_headUrl")
+    private String headUrl;
+
+    @Column(name = "t_role")
+    private String role;
+
+    public User(){}
+
+    public User(String name) {
+        this.name = name;
+        this.password = "";
+        this.salt = "";
+        this.email = "";
+        this.mobile = "";
+        this.headUrl = "";
+        this.role = "user";
+    }
 
     public Long getId() {
         return id;
@@ -48,6 +69,14 @@ public class User implements Serializable {
         this.password = password;
     }
 
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -64,14 +93,19 @@ public class User implements Serializable {
         this.mobile = mobile;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile='" + mobile + '\'' +
-                '}';
+    public String getHeadUrl() {
+        return headUrl;
+    }
+
+    public void setHeadUrl(String headUrl) {
+        this.headUrl = headUrl;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

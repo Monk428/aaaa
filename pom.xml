@@ -43,10 +43,10 @@
 		<!--</dependency>-->
 
 		<!--引入spring-boot-velocity依赖作为Web工程的模板引擎，用来将后端数据渲染到HTML页面再传输到前端浏览器显示。模板引擎的诞生是为了将显示与数据分离，从Sevlet开发时的数据页面混杂在一起变成了现在的数据和显示分离，从而也将页面渲染分成了前端渲染和后端渲染；后端渲染主要就是通过模板引擎将后端数据填充到模板页面中用来传输到前端浏览器显示，前端渲染主要是浏览器对页面CSS样式和JS动作的渲染。-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-velocity</artifactId>-->
-        <!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-velocity</artifactId>
+        </dependency>
 
         <!--jsp支持-->
         <dependency>
