@@ -18,9 +18,18 @@ public class SbBookApplicationTests {
 
 	@Test
 	public void contextLoads() throws Exception{
-		userDao.save(new User("www"));
+//		User user = new User();
+//		user.setId(1L);
+//		user.setUsername("www2");
+//		user.setPassword("1233333");
+//		user.setEmail("aaaa");
+//		userDao.saveAndFlush(user);
 
-		Assert.assertEquals(1, userDao.findAll().size());
+		userDao.updateUsernameById("www4",1L);
+
+//		System.out.print("id："+ userDao.findByUsername("www3").getId());
+
+//		Assert.assertEquals(1, userDao.findAll().size());
 	}
 
 }

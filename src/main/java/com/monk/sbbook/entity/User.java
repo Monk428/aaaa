@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "user")
 public class User implements Serializable {
 
     @Id
@@ -12,8 +11,8 @@ public class User implements Serializable {
     @Column(name = "t_id")
     private Long id;
 
-    @Column(name = "t_username",nullable = false)
-    private String name;
+    @Column(name = "t_username",nullable = false, unique = true)
+    private String username;
 
     @Column(name = "t_password",nullable = false)
     private String password;
@@ -36,7 +35,7 @@ public class User implements Serializable {
     public User(){}
 
     public User(String name) {
-        this.name = name;
+        this.username = name;
         this.password = "";
         this.salt = "";
         this.email = "";
@@ -53,12 +52,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
     public String getPassword() {
