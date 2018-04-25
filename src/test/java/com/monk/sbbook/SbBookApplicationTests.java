@@ -18,16 +18,16 @@ public class SbBookApplicationTests {
 
 	@Test
 	public void contextLoads() throws Exception{
-//		User user = new User();
-//		user.setId(1L);
-//		user.setUsername("www2");
-//		user.setPassword("1233333");
-//		user.setEmail("aaaa");
-//		userDao.saveAndFlush(user);
+		User user = new User();
+		user.setId(1L);
+		user.setUsername("www4");
+		user.setPassword("3333111");
+		user.setEmail("ccccc");
+		userDao.saveAndFlush(user);
 
 		userDao.updateUsernameById("www4",1L);
 
-//		System.out.print("id："+ userDao.findByUsername("www3").getId());
+		System.out.print("id："+ userDao.findByUsername("www4").getId());
 
 //		Assert.assertEquals(1, userDao.findAll().size());
 	}
