@@ -89,7 +89,7 @@ public class UserService {
             return map;
         }
 
-        if (MD5.Generic(password+u.getSalt()).equals(u.getPassword())){
+        if (!MD5.Generic(password+u.getSalt()).equals(u.getPassword())){
             map.put("msg","密码错误");
             return map;
         }

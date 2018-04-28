@@ -36,7 +36,25 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--静态文件修改之后无需重新运行整个工程，只需要重新编译修改的文件-->
+        <!--去除默认的打印-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--log4j-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j</artifactId>
+        </dependency>
+
+        <!--静态文件修改之后无需重新运行整个工程，只需要重新编译修改的文件-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

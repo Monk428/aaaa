@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/verify")
 public class UserController {
     @Autowired
     private UserService userService;
