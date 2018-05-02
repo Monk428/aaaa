@@ -22,9 +22,11 @@ public class UserController {
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public Result register(HttpServletResponse httpResponse,
-                           @RequestParam User user) {
-        Map<String,String> map = userService.register(user.getUsername(),
-                user.getPassword(),user.getMobile(),user.getEmail());
+                           @RequestParam String username,
+                           @RequestParam String password,
+                           @RequestParam(required = false) String mobile,
+                           @RequestParam String email) {
+        Map<String,String> map = userService.register(username, password, mobile, email);
         if (map.containsKey("ticket")) {
             Cookie cookie = new Cookie("ticket",map.get("ticket"));
             cookie.setPath("/");

@@ -13,9 +13,9 @@
 </div>
 <div>
         注册：<br/>
-        用户名：<input type="text" id="signupName"><br/>
-        密码： <input type="password" id="signupPsw"><br/>
-        邮箱号：<input type="text" id="signupEmail">
+        用户名：<input type="text" id="signupName" value="wjf"><br/>
+        密码： <input type="password" id="signupPsw" value="123456"><br/>
+        邮箱号：<input type="text" id="signupEmail" value="wjf@126.com">
         <div id="signup">注册</div><br/>
 </div>
 </body>
@@ -40,7 +40,7 @@
     })
 
     $('#signup').click(function () {
-        var json = {"user.username":$('#signupName').val(),"user.password":$('#signupPsw').val(),"user.email":$('#signupEmail').val()}
+        var json = {"username":$('#signupName').val(),"password":$('#signupPsw').val(),"email":$('#signupEmail').val()}
         $.ajax({
             type: "POST",
             url: '/verify/register',
