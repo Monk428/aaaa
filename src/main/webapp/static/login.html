@@ -29,6 +29,9 @@
             dataType: "json",
             success: function (data) {
                 console.log(data);
+                if (data.resultCode === 200) {
+                    window.location.href='./index.html'
+                }
             },
             error: function () {
                 console.log("提交失败");
@@ -41,6 +44,7 @@
 
     $('#signup').click(function () {
         var json = {"username":$('#signupName').val(),"password":$('#signupPsw').val(),"email":$('#signupEmail').val()}
+
         $.ajax({
             type: "POST",
             url: '/verify/register',

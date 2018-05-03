@@ -1,17 +1,13 @@
 package com.monk.sbbook.controller;
 
-import com.monk.sbbook.entity.User;
 import com.monk.sbbook.result.pojo.JsonResult;
 import com.monk.sbbook.result.pojo.Result;
 import com.monk.sbbook.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -57,6 +53,11 @@ public class UserController {
     public Result logout(@CookieValue("ticket") String ticket) {
         userService.logout(ticket);
 
+        return JsonResult.genSuccessResult();
+    }
+
+    @RequestMapping(value = "/getInfo", method = RequestMethod.POST)
+    public Result getInfo(@CookieValue("ticket") String tick) {
         return JsonResult.genSuccessResult();
     }
 

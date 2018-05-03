@@ -14,5 +14,6 @@ public interface LoginTicketDao extends JpaRepository<LoginTicket, Long>{
     @Modifying
     @Transactional
     @Query("update LoginTicket u set u.status=?1 where u.ticket=?2")
-    int updateTicketById(int status, String ticket);
+    int updateStatusByTicket(int status, String ticket);
+
 }

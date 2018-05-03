@@ -32,7 +32,8 @@ public class User implements Serializable {
     @Column(name = "t_role")
     private String role;
 
-    public User(){}
+    public User(){
+    }
 
     public User(String name) {
         this.username = name;

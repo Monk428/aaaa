@@ -5,12 +5,14 @@ import java.util.Date;
 
 @Entity
 public class LoginTicket {
-    @Id
-    @GeneratedValue
-    @Column(name = "t_id")
-    private Long id;
+//    @Id
+//    @GeneratedValue
+//    @Column(name = "t_id")
+//    private Long id;
 
-    @Column(name = "t_userId")
+//    将这个值作为主键，否则每次save都重新创建了
+    @Id
+    @Column(name = "t_userid")
     private Long userId;
 
     @Column(name = "t_expired")
@@ -22,13 +24,6 @@ public class LoginTicket {
     @Column(name = "t_ticket")
     private String ticket;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Long getUserId() {
         return userId;

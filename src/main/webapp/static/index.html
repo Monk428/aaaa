@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="./wechat/jquery-2.0.2.min.js"></script>
 </head>
 <body>
 欢迎页面
+
+<div id="submit">请求</div>
 </body>
+<script>
+    $('#submit').click(function () {
+        $.ajax({
+            type: "POST",
+            url: '/verify/getInfo',
+            data: '',
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+
+            },
+            error: function (data) {
+                console.log(data.responseText);
+                console.log("提交失败");
+            },
+            complete: function () {
+                console.log("complete");
+            }
+        })
+    })
+</script>
 </html>
