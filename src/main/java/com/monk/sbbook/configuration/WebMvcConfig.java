@@ -7,6 +7,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
+/**
+ *  配置拦截器
+ *  用于拦截未登录时的请求
+ */
+
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
