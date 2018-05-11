@@ -1,16 +1,29 @@
 package com.monk.sbbook.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import java.math.BigInteger;
 
+//@Entity
 public class JobAndTrigger {
+
+//	@Column(name = "JOB_NAME")
 	private String JOB_NAME;
+//	@Column(name = "JOB_GROUP")
 	private String JOB_GROUP;
+//	@Column(name = "JOB_CLASS_NAME")
 	private String JOB_CLASS_NAME;
+//	@Column(name = "TRIGGER_NAME")
 	private String TRIGGER_NAME;
+//	@Column(name = "TRIGGER_GROUP")
 	private String TRIGGER_GROUP;
+//	@Column(name = "REPEAT_INTERVAL")
 	private BigInteger REPEAT_INTERVAL;
+//	@Column(name = "TIMES_TRIGGERED")
 	private BigInteger TIMES_TRIGGERED;
+//	@Column(name = "CRON_EXPRESSION")
 	private String CRON_EXPRESSION;
+//	@Column(name = "TIME_ZONE_ID")
 	private String TIME_ZONE_ID;
 	
 	public String getJOB_NAME() {

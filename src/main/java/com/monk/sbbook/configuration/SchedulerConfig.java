@@ -35,11 +35,12 @@ public class SchedulerConfig {
 
     /*
      * quartz初始化监听器,让持久化的定时任务继续启动
+     * 添加到
      */
-    @Bean
-    public QuartzInitializerListener executorListener() {
-        return new QuartzInitializerListener();
-    }
+//    @Bean
+//    public QuartzInitializerListener executorListener() {
+//        return new QuartzInitializerListener();
+//    }
 
     /*
      * 通过SchedulerFactoryBean获取Scheduler的实例

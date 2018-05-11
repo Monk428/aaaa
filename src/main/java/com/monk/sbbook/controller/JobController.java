@@ -4,7 +4,7 @@ package com.monk.sbbook.controller;
 import com.github.pagehelper.PageInfo;
 import com.monk.sbbook.entity.JobAndTrigger;
 import com.monk.sbbook.job.BaseJob;
-import com.monk.sbbook.service.IJobAndTriggerService;
+//import com.monk.sbbook.service.IJobAndTriggerService;
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,15 +13,17 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 
 @RestController
 @RequestMapping(value="/job")
 public class JobController 
 {
-	@Autowired
-	private IJobAndTriggerService iJobAndTriggerService;
+//	@Autowired
+//	private IJobAndTriggerService iJobAndTriggerService;
 	
 	//加入Qulifier注解，通过名称注入bean
 	@Autowired
@@ -132,12 +134,37 @@ public class JobController
 	
 	
 	@GetMapping(value="/queryjob")
-	public Map<String, Object> queryjob(@RequestParam(value="pageNum")Integer pageNum, @RequestParam(value="pageSize")Integer pageSize)
+	public Map<String, Object> queryjob(@RequestParam(value="pageNum")Integer pageNum, @RequestParam(value="pageSize")Integer pageSize) throws Exception
 	{			
-		PageInfo<JobAndTrigger> jobAndTrigger = iJobAndTriggerService.getJobAndTriggerDetails(pageNum, pageSize);
+//		PageInfo<JobAndTrigger> jobAndTrigger = iJobAndTriggerService.getJobAndTriggerDetails(pageNum, pageSize);
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put("JobAndTrigger", jobAndTrigger);
+//		map.put("number", jobAndTrigger.getTotal());
+
+//		List<String> getJobGroupNames() throws SchedulerException;
+//
+//		Set<JobKey> getJobKeys(GroupMatcher<JobKey> var1) throws SchedulerException;
+//
+//		List<? extends Trigger> getTriggersOfJob(JobKey var1) throws SchedulerException;
+//
+//		List<String> getTriggerGroupNames() throws SchedulerException;
+//
+//		Set<TriggerKey> getTriggerKeys(GroupMatcher<TriggerKey> var1) throws SchedulerException;
+//
+//		Set<String> getPausedTriggerGroups() throws SchedulerException;
+//
+//		JobDetail getJobDetail(JobKey var1) throws SchedulerException;
+//
+//		Trigger getTrigger(TriggerKey var1) throws SchedulerException;
+//
+//		Trigger.TriggerState getTriggerState(TriggerKey var1) throws SchedulerException;
+
+		List<String> groupNames = scheduler.getJobGroupNames();
+
 		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("JobAndTrigger", jobAndTrigger);
-		map.put("number", jobAndTrigger.getTotal());
+//		map.put("JobAndTrigger", jobAndTrigger);
+//		map.put("number", jobAndTrigger.getTotal());
+
 		return map;
 	}
 	
