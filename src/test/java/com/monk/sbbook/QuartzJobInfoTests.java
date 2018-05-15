@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class QuartzJobTests {
+public class QuartzJobInfoTests {
     /**
      * 模拟mvc对象
      */
