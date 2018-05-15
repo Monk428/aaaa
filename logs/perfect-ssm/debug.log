@@ -1,0 +1,1317 @@
+[14:05:20] logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[14:05:20] Version - HV000001: Hibernate Validator 6.0.9.Final
+[14:05:20] TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[14:05:20] TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[14:05:20] TraversableResolvers - Unable to load or instantiate JPA aware resolver org.hibernate.validator.internal.engine.resolver.JPATraversableResolver. All properties will per default be traversable.
+[14:05:20] ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[14:05:20] ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+[14:05:20] ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[14:05:20] ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[14:05:20] SbBookApplication - Starting SbBookApplication on wjfdeiMac.local with PID 1102 (/Users/wengjf/Server/SpringMVC/sb-book/target/classes started by wengjf in /Users/wengjf/Server/SpringMVC/sb-book)
+[14:05:20] SbBookApplication - Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+[14:05:20] SbBookApplication - No active profile set, falling back to default profiles: default
+[14:05:20] ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+[14:05:20] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[14:05:20] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[14:05:20] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[14:05:20] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[14:05:20] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[14:05:22] HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@567fa790
+[14:05:22] HikariConfig - HikariPool-1 - configuration:
+[14:05:22] HikariConfig - allowPoolSuspension.............false
+[14:05:22] HikariConfig - autoCommit......................true
+[14:05:22] HikariConfig - catalog.........................none
+[14:05:22] HikariConfig - connectionInitSql...............none
+[14:05:22] HikariConfig - connectionTestQuery.............none
+[14:05:22] HikariConfig - connectionTimeout...............30000
+[14:05:22] HikariConfig - dataSource......................none
+[14:05:22] HikariConfig - dataSourceClassName.............none
+[14:05:22] HikariConfig - dataSourceJNDI..................none
+[14:05:22] HikariConfig - dataSourceProperties............{password=<masked>}
+[14:05:22] HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+[14:05:22] HikariConfig - healthCheckProperties...........{}
+[14:05:22] HikariConfig - healthCheckRegistry.............none
+[14:05:22] HikariConfig - idleTimeout.....................600000
+[14:05:22] HikariConfig - initializationFailFast..........true
+[14:05:22] HikariConfig - initializationFailTimeout.......1
+[14:05:22] HikariConfig - isolateInternalQueries..........false
+[14:05:22] HikariConfig - jdbc4ConnectionTest.............false
+[14:05:22] HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/sbBook
+[14:05:22] HikariConfig - leakDetectionThreshold..........0
+[14:05:22] HikariConfig - maxLifetime.....................1800000
+[14:05:22] HikariConfig - maximumPoolSize.................10
+[14:05:22] HikariConfig - metricRegistry..................none
+[14:05:22] HikariConfig - metricsTrackerFactory...........none
+[14:05:22] HikariConfig - minimumIdle.....................10
+[14:05:22] HikariConfig - password........................<masked>
+[14:05:22] HikariConfig - poolName........................"HikariPool-1"
+[14:05:22] HikariConfig - readOnly........................false
+[14:05:22] HikariConfig - registerMbeans..................false
+[14:05:22] HikariConfig - scheduledExecutor...............none
+[14:05:22] HikariConfig - scheduledExecutorService........internal
+[14:05:22] HikariConfig - schema..........................none
+[14:05:22] HikariConfig - threadFactory...................internal
+[14:05:22] HikariConfig - transactionIsolation............default
+[14:05:22] HikariConfig - username........................"root"
+[14:05:22] HikariConfig - validationTimeout...............5000
+[14:05:22] HikariDataSource - HikariPool-1 - Starting...
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4db71969
+[14:05:22] HikariDataSource - HikariPool-1 - Start completed.
+[14:05:22] LogHelper - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@567fa790
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/wengjf/Server/SpringMVC/sb-book/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.monk.sbbook.entity.GoodInfoEntity
+		com.monk.sbbook.entity.LoginTicket
+		com.monk.sbbook.entity.User]
+	Mapping files names []
+	Properties []
+[14:05:22] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[14:05:22] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[14:05:22] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[14:05:22] IntegratorServiceImpl - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+[14:05:22] Version - HHH000412: Hibernate Core {5.2.16.Final}
+[14:05:22] Environment - HHH000206: hibernate.properties not found
+[14:05:22] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[14:05:22] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[14:05:22] HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[14:05:22] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5914391b
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@556469a7
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4e602097
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@569a19ec
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2a36d89a
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@271a9c3e
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4e0f527b
+[14:05:22] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@41fadeb0
+[14:05:22] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@41fadeb0
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@41fadeb0
+[14:05:22] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2635607
+[14:05:22] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@a0a32f0
+[14:05:22] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@6c281f15
+[14:05:22] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@267bb88c
+[14:05:22] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@267bb88c
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@267bb88c
+[14:05:22] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7245e9d5
+[14:05:22] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7245e9d5
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7245e9d5
+[14:05:22] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@608e0a5a
+[14:05:22] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@608e0a5a
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@608e0a5a
+[14:05:22] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@35e6e7c0
+[14:05:22] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@35e6e7c0
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@35e6e7c0
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4d8016b7
+[14:05:22] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7e757022
+[14:05:22] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7e757022
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7e757022
+[14:05:22] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@39da2130
+[14:05:22] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@39da2130
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@39da2130
+[14:05:22] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@415e9a34
+[14:05:22] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@415e9a34
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@415e9a34
+[14:05:22] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6fabf0d5
+[14:05:22] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6fabf0d5
+[14:05:22] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@39f1c8fd
+[14:05:22] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@39f1c8fd
+[14:05:22] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@68c8e847
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@68c8e847
+[14:05:22] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2f5fab7f
+[14:05:22] HikariPool - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@481a8ea7
+[14:05:22] HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[14:05:22] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5f7ba8bb
+[14:05:22] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@191f4f5e
+[14:05:22] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@191f4f5e
+[14:05:22] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@68fb9a89
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@68fb9a89
+[14:05:22] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@6ca65244
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6ca65244
+[14:05:22] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1953dd03
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1953dd03
+[14:05:22] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4c55bcde
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4c55bcde
+[14:05:22] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@b06d229
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@b06d229
+[14:05:22] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49c171fd
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49c171fd
+[14:05:22] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@33796142
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@33796142
+[14:05:22] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@c4c0924
+[14:05:22] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@c4c0924
+[14:05:22] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@51938bff
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@51938bff
+[14:05:22] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@da0137f
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@da0137f
+[14:05:22] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@2dc714b5
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2dc714b5
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2dc714b5
+[14:05:22] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@25f86f36
+[14:05:22] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@1a0e9775
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1a0e9775
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1a0e9775
+[14:05:22] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5927f945
+[14:05:22] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@6f343ca4
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6f343ca4
+[14:05:22] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@50255da9
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@50255da9
+[14:05:22] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3277c10f
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3277c10f
+[14:05:22] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@1fb6c36d
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1fb6c36d
+[14:05:22] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@76df002b
+[14:05:22] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@76df002b
+[14:05:22] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@43ac51b6
+[14:05:22] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@326648e6
+[14:05:22] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@326648e6
+[14:05:22] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@326648e6
+[14:05:22] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@b8a41db
+[14:05:22] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@b8a41db
+[14:05:22] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@b8a41db
+[14:05:22] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@550781a5
+[14:05:22] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7753de61
+[14:05:22] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@6d0075c5
+[14:05:22] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@6d0075c5
+[14:05:22] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@6d0075c5
+[14:05:22] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@eac8436
+[14:05:22] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@eac8436
+[14:05:22] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@eac8436
+[14:05:22] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@463d22d0
+[14:05:22] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@4384c52c
+[14:05:22] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5a8feb9b
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5a8feb9b
+[14:05:22] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@50e5fbe8
+[14:05:22] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1127fc40
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1127fc40
+[14:05:22] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@74c715bf
+[14:05:22] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@74c715bf
+[14:05:22] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@31284664
+[14:05:22] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@67b80
+[14:05:22] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@30d8c99b
+[14:05:22] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@76d40712
+[14:05:22] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@76d40712
+[14:05:22] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1cee2c5a
+[14:05:22] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4ad44442
+[14:05:22] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@19524841
+[14:05:22] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@35865b29
+[14:05:22] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@58e73d3f
+[14:05:22] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@30f99435
+[14:05:22] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3b62d22b
+[14:05:22] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3cba997d
+[14:05:22] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.22
+      major : 5
+      minor : 7
+[14:05:22] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )
+      major : 5
+      minor : 1
+[14:05:22] JdbcEnvironmentInitiator - JDBC version : 4.0
+[14:05:22] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[14:05:22] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[14:05:22] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[14:05:22] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[14:05:22] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[14:05:22] AnnotationBinder - Binding entity from annotated class: com.monk.sbbook.entity.LoginTicket
+[14:05:22] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[14:05:22] EntityBinder - Import with entity name LoginTicket
+[14:05:22] EntityBinder - Bind entity com.monk.sbbook.entity.LoginTicket on table login_ticket
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(login_ticket), mappingColumn=t_userid, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.LoginTicket:userId]
+[14:05:22] SimpleValueBinder - building SimpleValue for userId
+[14:05:22] PropertyBinder - Building property userId
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(login_ticket), mappingColumn=t_expired, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property expired with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.LoginTicket:expired]
+[14:05:22] SimpleValueBinder - building SimpleValue for expired
+[14:05:22] PropertyBinder - Building property expired
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(login_ticket), mappingColumn=t_status, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property status with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.LoginTicket:status]
+[14:05:22] SimpleValueBinder - building SimpleValue for status
+[14:05:22] PropertyBinder - Building property status
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(login_ticket), mappingColumn=t_ticket, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property ticket with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.LoginTicket:ticket]
+[14:05:22] SimpleValueBinder - building SimpleValue for ticket
+[14:05:22] PropertyBinder - Building property ticket
+[14:05:22] AnnotationBinder - Binding entity from annotated class: com.monk.sbbook.entity.User
+[14:05:22] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[14:05:22] EntityBinder - Import with entity name User
+[14:05:22] EntityBinder - Bind entity com.monk.sbbook.entity.User on table user
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_id, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:id]
+[14:05:22] SimpleValueBinder - building SimpleValue for id
+[14:05:22] PropertyBinder - Building property id
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_email, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:email]
+[14:05:22] SimpleValueBinder - building SimpleValue for email
+[14:05:22] PropertyBinder - Building property email
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_head_url, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property headUrl with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:headUrl]
+[14:05:22] SimpleValueBinder - building SimpleValue for headUrl
+[14:05:22] PropertyBinder - Building property headUrl
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_mobile, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property mobile with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:mobile]
+[14:05:22] SimpleValueBinder - building SimpleValue for mobile
+[14:05:22] PropertyBinder - Building property mobile
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_password, insertable=true, updatable=true, unique=false}
+[14:05:22] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[14:05:22] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:password]
+[14:05:22] SimpleValueBinder - building SimpleValue for password
+[14:05:22] PropertyBinder - Building property password
+[14:05:22] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_role, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property role with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:role]
+[14:05:23] SimpleValueBinder - building SimpleValue for role
+[14:05:23] PropertyBinder - Building property role
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_salt, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property salt with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:salt]
+[14:05:23] SimpleValueBinder - building SimpleValue for salt
+[14:05:23] PropertyBinder - Building property salt
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=t_username, insertable=true, updatable=true, unique=true}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.User:username]
+[14:05:23] SimpleValueBinder - building SimpleValue for username
+[14:05:23] PropertyBinder - Building property username
+[14:05:23] AnnotationBinder - Binding entity from annotated class: com.monk.sbbook.entity.GoodInfoEntity
+[14:05:23] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[14:05:23] EntityBinder - Import with entity name GoodInfoEntity
+[14:05:23] EntityBinder - Bind entity com.monk.sbbook.entity.GoodInfoEntity on table basic_good_info
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(basic_good_info), mappingColumn=bgi_id, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.GoodInfoEntity:id]
+[14:05:23] SimpleValueBinder - building SimpleValue for id
+[14:05:23] PropertyBinder - Building property id
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(basic_good_info), mappingColumn=bgi_name, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.GoodInfoEntity:name]
+[14:05:23] SimpleValueBinder - building SimpleValue for name
+[14:05:23] PropertyBinder - Building property name
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(basic_good_info), mappingColumn=bgi_price, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property price with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.GoodInfoEntity:price]
+[14:05:23] SimpleValueBinder - building SimpleValue for price
+[14:05:23] PropertyBinder - Building property price
+[14:05:23] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(basic_good_info), mappingColumn=bgi_unit, insertable=true, updatable=true, unique=false}
+[14:05:23] PropertyBinder - MetadataSourceProcessor property unit with lazy=false
+[14:05:23] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.monk.sbbook.entity.GoodInfoEntity:unit]
+[14:05:23] SimpleValueBinder - building SimpleValue for unit
+[14:05:23] PropertyBinder - Building property unit
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for userId
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for expired
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for status
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for ticket
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for id
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for email
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for headUrl
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for mobile
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for password
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for role
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for salt
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for username
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for id
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for name
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for price
+[14:05:23] SimpleValueBinder - Starting fillSimpleValue for unit
+[14:05:23] PrimaryKey - Forcing column [t_userid] to be non-null as it is part of the primary key for table [login_ticket]
+[14:05:23] PrimaryKey - Forcing column [t_id] to be non-null as it is part of the primary key for table [user]
+[14:05:23] PrimaryKey - Forcing column [bgi_id] to be non-null as it is part of the primary key for table [basic_good_info]
+[14:05:23] SessionFactoryImpl - Building session factory
+[14:05:23] Settings - SessionFactory name : null
+[14:05:23] Settings - Automatic flush during beforeCompletion(): enabled
+[14:05:23] Settings - Automatic session close at end of transaction: disabled
+[14:05:23] Settings - Statistics: disabled
+[14:05:23] Settings - Deleted entity synthetic identifier rollback: disabled
+[14:05:23] Settings - Default entity-mode: pojo
+[14:05:23] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[14:05:23] Settings - Allow initialization of lazy state outside session : disabled
+[14:05:23] Settings - Using BatchFetchStyle : LEGACY
+[14:05:23] Settings - Default batch fetch size: -1
+[14:05:23] Settings - Maximum outer join fetch depth: 2
+[14:05:23] Settings - Default null ordering: NONE
+[14:05:23] Settings - Order SQL updates by primary key: disabled
+[14:05:23] Settings - Order SQL inserts for batching: disabled
+[14:05:23] Settings - multi-tenancy strategy : NONE
+[14:05:23] Settings - JTA Track by Thread: enabled
+[14:05:23] Settings - Query language substitutions: {}
+[14:05:23] Settings - JPA query language strict compliance: disabled
+[14:05:23] Settings - Named query checking : enabled
+[14:05:23] Settings - Second-level cache: enabled
+[14:05:23] Settings - Second-level query cache: disabled
+[14:05:23] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@16f3940a
+[14:05:23] Settings - Second-level cache region prefix: null
+[14:05:23] Settings - Optimize second-level cache for minimal puts: disabled
+[14:05:23] Settings - Structured second-level cache entries: disabled
+[14:05:23] Settings - Second-level cache direct-reference entries: disabled
+[14:05:23] Settings - Automatic eviction of collection cache: disabled
+[14:05:23] Settings - JDBC batch size: 15
+[14:05:23] Settings - JDBC batch updates for versioned data: enabled
+[14:05:23] Settings - Scrollable result sets: enabled
+[14:05:23] Settings - Wrap result sets: disabled
+[14:05:23] Settings - JDBC3 getGeneratedKeys(): enabled
+[14:05:23] Settings - JDBC result set fetch size: null
+[14:05:23] Settings - Connection release mode: ON_CLOSE
+[14:05:23] Settings - Generate SQL with comments: disabled
+[14:05:23] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[14:05:23] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, com.sun.management.jmxremote.authenticate=false, java.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/lib/tools.jar:/Users/wengjf/Server/SpringMVC/sb-book/target/classes:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.0.1.RELEASE/spring-boot-starter-web-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.0.1.RELEASE/spring-boot-starter-json-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.5/jackson-datatype-jdk8-2.9.5.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.5/jackson-datatype-jsr310-2.9.5.jar:/Users/wengjf/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.5/jackson-module-parameter-names-2.9.5.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.0.1.RELEASE/spring-boot-starter-tomcat-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.29/tomcat-embed-websocket-8.5.29.jar:/Users/wengjf/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.9.Final/hibernate-validator-6.0.9.Final.jar:/Users/wengjf/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/wengjf/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/wengjf/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/wengjf/.m2/repository/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-webmvc/5.0.5.RELEASE/spring-webmvc-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/wengjf/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter/2.0.1.RELEASE/spring-boot-starter-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot/2.0.1.RELEASE/spring-boot-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.1.RELEASE/spring-boot-autoconfigure-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/wengjf/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-log4j/1.3.8.RELEASE/spring-boot-starter-log4j-1.3.8.RELEASE.jar:/Users/wengjf/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/wengjf/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/wengjf/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar:/Users/wengjf/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-devtools/2.0.1.RELEASE/spring-boot-devtools-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/8.5.29/tomcat-embed-jasper-8.5.29.jar:/Users/wengjf/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29.jar:/Users/wengjf/.m2/repository/org/apache/tomcat/tomcat-annotations-api/8.5.29/tomcat-annotations-api-8.5.29.jar:/Users/wengjf/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.29/tomcat-embed-el-8.5.29.jar:/Users/wengjf/.m2/repository/org/eclipse/jdt/ecj/3.12.3/ecj-3.12.3.jar:/Users/wengjf/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/wengjf/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/wengjf/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.0.1.RELEASE/spring-boot-starter-data-jpa-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.0.1.RELEASE/spring-boot-starter-aop-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.0.1.RELEASE/spring-boot-starter-jdbc-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/com/zaxxer/HikariCP/2.7.8/HikariCP-2.7.8.jar:/Users/wengjf/.m2/repository/org/springframework/spring-jdbc/5.0.5.RELEASE/spring-jdbc-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/hibernate/hibernate-core/5.2.16.Final/hibernate-core-5.2.16.Final.jar:/Users/wengjf/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/wengjf/.m2/repository/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar:/Users/wengjf/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/wengjf/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/Users/wengjf/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/wengjf/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/Users/wengjf/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/Users/wengjf/.m2/repository/org/springframework/data/spring-data-jpa/2.0.6.RELEASE/spring-data-jpa-2.0.6.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-orm/5.0.5.RELEASE/spring-orm-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-aspects/5.0.5.RELEASE/spring-aspects-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-mail/2.0.1.RELEASE/spring-boot-starter-mail-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-context-support/5.0.5.RELEASE/spring-context-support-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/com/sun/mail/javax.mail/1.6.1/javax.mail-1.6.1.jar:/Users/wengjf/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/wengjf/.m2/repository/org/springframework/boot/spring-boot-starter-quartz/2.0.1.RELEASE/spring-boot-starter-quartz-2.0.1.RELEASE.jar:/Users/wengjf/.m2/repository/org/springframework/spring-tx/5.0.5.RELEASE/spring-tx-5.0.5.RELEASE.jar:/Users/wengjf/.m2/repository/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0.jar:/Users/wengjf/.m2/repository/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar:/Users/wengjf/.m2/repository/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0.jar:/Users/wengjf/.m2/repository/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Macau, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=CN, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib, com.sun.management.jmxremote.ssl=false, spring.application.admin.enabled=true, sun.java.command=com.monk.sbbook.SbBookApplication, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@2c12e99d, com.sun.management.jmxremote=, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, javax.persistence.sharedCache.mode=UNSPECIFIED, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/Users/wengjf, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre, spring.output.ansi.enabled=always, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/classes, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_171-b11, user.name=wengjf, path.separator=:, os.version=10.13.2, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/0w/1jq5c81s5g15hzzhnwm8497w0000gp/T/, com.zaxxer.hikari.pool_number=1, catalina.home=/private/var/folders/0w/1jq5c81s5g15hzzhnwm8497w0000gp/T/tomcat.6766214865033871097.8080, com.sun.management.jmxremote.port=58382, java.version=1.8.0_171, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/wengjf/Server/SpringMVC/sb-book, os.arch=x86_64, PID=1102, java.vm.specification.name=Java Virtual Machine Specification, user.language.format=en, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/0w/1jq5c81s5g15hzzhnwm8497w0000gp/T/tomcat.6766214865033871097.8080, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4bad61cd, java.library.path=/Users/wengjf/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.171-b11, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, java.rmi.server.hostname=127.0.0.1, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeBig, java.ext.dirs=/Users/wengjf/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.class.version=52.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16}
+[14:05:23] TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[14:05:23] TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[14:05:23] TraversableResolvers - Unable to load or instantiate JPA aware resolver org.hibernate.validator.internal.engine.resolver.JPATraversableResolver. All properties will per default be traversable.
+[14:05:23] ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[14:05:23] ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+[14:05:23] ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[14:05:23] ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[14:05:23] ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.LoginTicket] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.LoginTicket
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.User] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.User
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.GoodInfoEntity] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.GoodInfoEntity
+[14:05:23] JaccIntegrator - Skipping JACC integration as it was not enabled
+[14:05:23] CascadeStyles - External cascade style registration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+[14:05:23] SessionFactoryImpl - Instantiated session factory
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.LoginTicket] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.LoginTicket
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.LoginTicket] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.LoginTicket
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.User] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.User
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.User] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.User
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.GoodInfoEntity] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.GoodInfoEntity
+[14:05:23] ClassLoaderAccessImpl - Not known whether passed class name [com.monk.sbbook.entity.GoodInfoEntity] is safe
+[14:05:23] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.monk.sbbook.entity.GoodInfoEntity
+[14:05:23] AbstractEntityPersister - Static SQL for entity: com.monk.sbbook.entity.LoginTicket
+[14:05:23] AbstractEntityPersister -  Version select: select t_userid from login_ticket where t_userid =?
+[14:05:23] AbstractEntityPersister -  Snapshot select: select loginticke_.t_userid, loginticke_.t_expired as t_expire2_1_, loginticke_.t_status as t_status3_1_, loginticke_.t_ticket as t_ticket4_1_ from login_ticket loginticke_ where loginticke_.t_userid=?
+[14:05:23] AbstractEntityPersister -  Insert 0: insert into login_ticket (t_expired, t_status, t_ticket, t_userid) values (?, ?, ?, ?)
+[14:05:23] AbstractEntityPersister -  Update 0: update login_ticket set t_expired=?, t_status=?, t_ticket=? where t_userid=?
+[14:05:23] AbstractEntityPersister -  Delete 0: delete from login_ticket where t_userid=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@86dc23e]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [NONE]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2767fb36]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [READ]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c383c41]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [UPGRADE]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12a8b329]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [UPGRADE_NOWAIT]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@278bac85]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [UPGRADE_SKIPLOCKED]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@82330b4]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [FORCE]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7adf7c5c]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [PESSIMISTIC_READ]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? lock in share mode
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b518cf0]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [PESSIMISTIC_WRITE]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a4d60c7]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [PESSIMISTIC_FORCE_INCREMENT]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@62691cb8]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [OPTIMISTIC]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@67425e0]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : expired
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : status
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : ticket
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.LoginTicket)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.LoginTicket, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.LoginTicket)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.LoginTicket)
+          - SQL table alias mapping - loginticke0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_userid1_1_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.LoginTicket [OPTIMISTIC_FORCE_INCREMENT]: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] Loader - Static select for action ACTION_MERGE on entity com.monk.sbbook.entity.LoginTicket: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] Loader - Static select for action ACTION_REFRESH on entity com.monk.sbbook.entity.LoginTicket: select loginticke0_.t_userid as t_userid1_1_0_, loginticke0_.t_expired as t_expire2_1_0_, loginticke0_.t_status as t_status3_1_0_, loginticke0_.t_ticket as t_ticket4_1_0_ from login_ticket loginticke0_ where loginticke0_.t_userid=?
+[14:05:23] AbstractEntityPersister - Static SQL for entity: com.monk.sbbook.entity.User
+[14:05:23] AbstractEntityPersister -  Version select: select t_id from user where t_id =?
+[14:05:23] AbstractEntityPersister -  Snapshot select: select user_.t_id, user_.t_email as t_email2_2_, user_.t_head_url as t_head_u3_2_, user_.t_mobile as t_mobile4_2_, user_.t_password as t_passwo5_2_, user_.t_role as t_role6_2_, user_.t_salt as t_salt7_2_, user_.t_username as t_userna8_2_ from user user_ where user_.t_id=?
+[14:05:23] AbstractEntityPersister -  Insert 0: insert into user (t_email, t_head_url, t_mobile, t_password, t_role, t_salt, t_username, t_id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[14:05:23] AbstractEntityPersister -  Update 0: update user set t_email=?, t_head_url=?, t_mobile=?, t_password=?, t_role=?, t_salt=?, t_username=? where t_id=?
+[14:05:23] AbstractEntityPersister -  Delete 0: delete from user where t_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3798ff70]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [NONE]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@369840e3]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [READ]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@37ef77d3]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [UPGRADE]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d957914]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [UPGRADE_NOWAIT]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55c94df8]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [UPGRADE_SKIPLOCKED]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4111e70c]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [FORCE]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@adc7d6a]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [PESSIMISTIC_READ]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? lock in share mode
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5a01a7f8]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [PESSIMISTIC_WRITE]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2bcdb8ea]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58b92f7a]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [OPTIMISTIC]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41ee4036]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : email
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : headUrl
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : mobile
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : password
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : role
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : salt
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : username
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.User, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {t_id1_2_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] Loader - Static select for action ACTION_MERGE on entity com.monk.sbbook.entity.User: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] Loader - Static select for action ACTION_REFRESH on entity com.monk.sbbook.entity.User: select user0_.t_id as t_id1_2_0_, user0_.t_email as t_email2_2_0_, user0_.t_head_url as t_head_u3_2_0_, user0_.t_mobile as t_mobile4_2_0_, user0_.t_password as t_passwo5_2_0_, user0_.t_role as t_role6_2_0_, user0_.t_salt as t_salt7_2_0_, user0_.t_username as t_userna8_2_0_ from user user0_ where user0_.t_id=?
+[14:05:23] AbstractEntityPersister - Static SQL for entity: com.monk.sbbook.entity.GoodInfoEntity
+[14:05:23] AbstractEntityPersister -  Version select: select bgi_id from basic_good_info where bgi_id =?
+[14:05:23] AbstractEntityPersister -  Snapshot select: select goodinfoen_.bgi_id, goodinfoen_.bgi_name as bgi_name2_0_, goodinfoen_.bgi_price as bgi_pric3_0_, goodinfoen_.bgi_unit as bgi_unit4_0_ from basic_good_info goodinfoen_ where goodinfoen_.bgi_id=?
+[14:05:23] AbstractEntityPersister -  Insert 0: insert into basic_good_info (bgi_name, bgi_price, bgi_unit, bgi_id) values (?, ?, ?, ?)
+[14:05:23] AbstractEntityPersister -  Update 0: update basic_good_info set bgi_name=?, bgi_price=?, bgi_unit=? where bgi_id=?
+[14:05:23] AbstractEntityPersister -  Delete 0: delete from basic_good_info where bgi_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c598b3f]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [NONE]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d2380cf]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [READ]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7559e572]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [UPGRADE]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2666c1fa]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [UPGRADE_NOWAIT]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@351a7c7e]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [UPGRADE_SKIPLOCKED]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72b7d19a]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [FORCE]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@832530a]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [PESSIMISTIC_READ]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? lock in share mode
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53356922]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [PESSIMISTIC_WRITE]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e76f72b]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [PESSIMISTIC_FORCE_INCREMENT]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=? for update
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b3feb40]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [OPTIMISTIC]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@248ce0aa]
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : name
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : price
+[14:05:23] MetamodelGraphWalker - Visiting attribute path : unit
+[14:05:23] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[14:05:23] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[14:05:23] LoadPlanTreePrinter - LoadPlan(entity=com.monk.sbbook.entity.GoodInfoEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.monk.sbbook.entity.GoodInfoEntity, querySpaceUid=<gen:0>, path=com.monk.sbbook.entity.GoodInfoEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.monk.sbbook.entity.GoodInfoEntity)
+          - SQL table alias mapping - goodinfoen0_
+          - alias suffix - 0_
+          - suffixed key columns - {bgi_id1_0_0_}
+
+[14:05:23] EntityLoader - Static select for entity com.monk.sbbook.entity.GoodInfoEntity [OPTIMISTIC_FORCE_INCREMENT]: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] Loader - Static select for action ACTION_MERGE on entity com.monk.sbbook.entity.GoodInfoEntity: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] Loader - Static select for action ACTION_REFRESH on entity com.monk.sbbook.entity.GoodInfoEntity: select goodinfoen0_.bgi_id as bgi_id1_0_0_, goodinfoen0_.bgi_name as bgi_name2_0_0_, goodinfoen0_.bgi_price as bgi_pric3_0_0_, goodinfoen0_.bgi_unit as bgi_unit4_0_0_ from basic_good_info goodinfoen0_ where goodinfoen0_.bgi_id=?
+[14:05:23] Table - No alter strings for table : basic_good_info
+[14:05:23] Table - No alter strings for table : hibernate_sequence
+[14:05:23] Table - No alter strings for table : login_ticket
+[14:05:23] Table - No alter strings for table : user
+[14:05:23] NamedQueryRepository - Checking 0 named HQL queries
+[14:05:23] NamedQueryRepository - Checking 0 named SQL queries
+[14:05:23] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2bdcfd10
+[14:05:23] SessionFactoryRegistry - Registering SessionFactory: 64624ef7-28ea-41c7-9ba2-2ed04540e9fa (<unnamed>)
+[14:05:23] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[14:05:23] StatisticsInitiator - Statistics initialized [enabled=false]
+[14:05:23] QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5df9a69f
+[14:05:23] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[14:05:23] QueryTranslatorImpl - parse() - HQL: update com.monk.sbbook.entity.LoginTicket u set u.status=?1 where u.ticket=?2
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] QueryTranslatorImpl - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     +-[DOT] Node: '.'
+    |     |  +-[DOT] Node: '.'
+    |     |  |  +-[DOT] Node: '.'
+    |     |  |  |  +-[DOT] Node: '.'
+    |     |  |  |  |  +-[IDENT] Node: 'com'
+    |     |  |  |  |  \-[IDENT] Node: 'monk'
+    |     |  |  |  \-[IDENT] Node: 'sbbook'
+    |     |  |  \-[IDENT] Node: 'entity'
+    |     |  \-[IDENT] Node: 'LoginTicket'
+    |     \-[ALIAS] Node: 'u'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[DOT] Node: '.'
+    |     |  +-[IDENT] Node: 'u'
+    |     |  \-[IDENT] Node: 'status'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'u'
+          |  \-[IDENT] Node: 'ticket'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+[14:05:23] HqlSqlBaseWalker - update << begin [level=1, statement=update]
+[14:05:23] FromElement - FromClause{level=1} : com.monk.sbbook.entity.LoginTicket (u) -> loginticke0_
+[14:05:23] FromReferenceNode - Resolved : u -> t_userid
+[14:05:23] DotNode - getDataType() : status -> org.hibernate.type.IntegerType@35e6e7c0
+[14:05:23] FromReferenceNode - Resolved : u.status -> t_status
+[14:05:23] FromReferenceNode - Resolved : u -> t_userid
+[14:05:23] DotNode - getDataType() : ticket -> org.hibernate.type.StringType@68c8e847
+[14:05:23] FromReferenceNode - Resolved : u.ticket -> t_ticket
+[14:05:23] HqlSqlBaseWalker - update : finishing up [level=1, statement=update]
+[14:05:23] HqlSqlBaseWalker - update >> end [level=1, statement=update]
+[14:05:23] QueryTranslatorImpl - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (login_ticket)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[loginticke0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'login_ticket' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=login_ticket,tableAlias=loginticke0_,origin=null,columns={,className=com.monk.sbbook.entity.LoginTicket}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 't_status' {propertyName=status,dereferenceType=PRIMITIVE,getPropertyPath=status,path=u.status,tableAlias=loginticke0_,className=com.monk.sbbook.entity.LoginTicket,classAlias=u}
+    |     |  +-[ALIAS_REF] IdentNode: 't_userid' {alias=u, className=com.monk.sbbook.entity.LoginTicket, tableAlias=loginticke0_}
+    |     |  \-[IDENT] IdentNode: 'status' {originalText=status}
+    |     \-[NAMED_PARAM] ParameterNode: '?' {name=1, expectedType=org.hibernate.type.IntegerType@35e6e7c0}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 't_ticket' {propertyName=ticket,dereferenceType=PRIMITIVE,getPropertyPath=ticket,path=u.ticket,tableAlias=loginticke0_,className=com.monk.sbbook.entity.LoginTicket,classAlias=u}
+          |  +-[ALIAS_REF] IdentNode: 't_userid' {alias=u, className=com.monk.sbbook.entity.LoginTicket, tableAlias=loginticke0_}
+          |  \-[IDENT] IdentNode: 'ticket' {originalText=ticket}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=2, expectedType=org.hibernate.type.StringType@68c8e847}
+
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] StdSchedulerFactory - Using default implementation for ThreadExecutor
+[14:05:23] SimpleThreadPool - Job execution threads will use class loader of thread: restartedMain
+[14:05:23] SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[14:05:23] QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+[14:05:23] QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactoryBean' with instanceId 'wjfdeiMac.local1526364323613'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[14:05:23] StdSchedulerFactory - Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+[14:05:23] StdSchedulerFactory - Quartz scheduler version: 2.3.0
+[14:05:23] QuartzScheduler - JobFactory set to: com.monk.sbbook.configuration.QuartzConfiguration$AutowiringSpringBeanJobFactory@c352d77
+[14:05:23] QueryTranslatorImpl - parse() - HQL: update com.monk.sbbook.entity.User u set u.username= ?1 where u.id= ?2
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] QueryTranslatorImpl - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     +-[DOT] Node: '.'
+    |     |  +-[DOT] Node: '.'
+    |     |  |  +-[DOT] Node: '.'
+    |     |  |  |  +-[DOT] Node: '.'
+    |     |  |  |  |  +-[IDENT] Node: 'com'
+    |     |  |  |  |  \-[IDENT] Node: 'monk'
+    |     |  |  |  \-[IDENT] Node: 'sbbook'
+    |     |  |  \-[IDENT] Node: 'entity'
+    |     |  \-[IDENT] Node: 'User'
+    |     \-[ALIAS] Node: 'u'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[DOT] Node: '.'
+    |     |  +-[IDENT] Node: 'u'
+    |     |  \-[IDENT] Node: 'username'
+    |     \-[PARAM] Node: '?'
+    |        \-[NUM_INT] Node: '1'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'u'
+          |  \-[IDENT] Node: 'id'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '2'
+
+[14:05:23] HqlSqlBaseWalker - update << begin [level=1, statement=update]
+[14:05:23] FromElement - FromClause{level=1} : com.monk.sbbook.entity.User (u) -> user0_
+[14:05:23] FromReferenceNode - Resolved : u -> t_id
+[14:05:23] DotNode - getDataType() : username -> org.hibernate.type.StringType@68c8e847
+[14:05:23] FromReferenceNode - Resolved : u.username -> t_username
+[14:05:23] FromReferenceNode - Resolved : u -> t_id
+[14:05:23] DotNode - getDataType() : id -> org.hibernate.type.LongType@7e757022
+[14:05:23] FromReferenceNode - Resolved : u.id -> t_id
+[14:05:23] HqlSqlBaseWalker - update : finishing up [level=1, statement=update]
+[14:05:23] HqlSqlBaseWalker - update >> end [level=1, statement=update]
+[14:05:23] QueryTranslatorImpl - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (user)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.monk.sbbook.entity.User}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 't_username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=u.username,tableAlias=user0_,className=com.monk.sbbook.entity.User,classAlias=u}
+    |     |  +-[ALIAS_REF] IdentNode: 't_id' {alias=u, className=com.monk.sbbook.entity.User, tableAlias=user0_}
+    |     |  \-[IDENT] IdentNode: 'username' {originalText=username}
+    |     \-[NAMED_PARAM] ParameterNode: '?' {name=1, expectedType=org.hibernate.type.StringType@68c8e847}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 't_id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path=u.id,tableAlias=user0_,className=com.monk.sbbook.entity.User,classAlias=u}
+          |  +-[ALIAS_REF] IdentNode: 't_id' {alias=u, className=com.monk.sbbook.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=2, expectedType=org.hibernate.type.LongType@7e757022}
+
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] ErrorCounter - throwQueryException() : no errors
+[14:05:23] TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[14:05:23] TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[14:05:23] TraversableResolvers - Unable to load or instantiate JPA aware resolver org.hibernate.validator.internal.engine.resolver.JPATraversableResolver. All properties will per default be traversable.
+[14:05:23] ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+[14:05:23] TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[14:05:23] TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[14:05:23] TraversableResolvers - Unable to load or instantiate JPA aware resolver org.hibernate.validator.internal.engine.resolver.JPATraversableResolver. All properties will per default be traversable.
+[14:05:23] ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[14:05:23] ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[14:05:23] ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[14:05:23] ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[14:05:23] ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+[14:05:23] ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+[14:05:23] ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[14:05:23] ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[14:05:23] ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[14:05:24] SbBookApplication - Started SbBookApplication in 3.863 seconds (JVM running for 4.499)
+[14:05:24] SbBookApplication - 【【【【【【定时任务分布式节点 - quartz-cluster-node-first 已启动】】】】】】
+[14:05:26] StdRowLockSemaphore - Lock 'STATE_ACCESS' is desired by: Quartz Scheduler [schedulerFactoryBean]
+[14:05:26] StdRowLockSemaphore - Lock 'STATE_ACCESS' is being obtained: Quartz Scheduler [schedulerFactoryBean]
+[14:05:26] StdRowLockSemaphore - Lock 'STATE_ACCESS' given to: Quartz Scheduler [schedulerFactoryBean]
+[14:05:26] StdRowLockSemaphore - Lock 'STATE_ACCESS' returned by: Quartz Scheduler [schedulerFactoryBean]
+[14:05:26] QuartzScheduler - Scheduler schedulerFactoryBean_$_wjfdeiMac.local1526364323613 started.
+[14:05:26] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:30] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:05:30] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:05:30 CST 2018
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-1
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-1
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-1
+[14:05:30] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:05:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-1
+[14:05:36] StdRowLockSemaphore - Lock 'STATE_ACCESS' is desired by: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'STATE_ACCESS' is being obtained: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'STATE_ACCESS' given to: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'STATE_ACCESS' returned by: QuartzScheduler_schedulerFactoryBean-wjfdeiMac.local1526364323613_ClusterManager
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:36] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:05:36] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:05:52] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:00] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:06:00] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:06:00 CST 2018
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-2
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-2
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-2
+[14:06:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-2
+[14:06:00] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:06:22] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:06:30] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:06:30] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:06:30 CST 2018
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-3
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-3
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-3
+[14:06:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-3
+[14:06:30] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:06:52] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:00] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:07:00] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:07:00 CST 2018
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-4
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-4
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-4
+[14:07:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-4
+[14:07:00] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:07:22] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:07:30] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:07:30] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:07:30 CST 2018
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-5
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-5
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-5
+[14:07:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-5
+[14:07:30] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:07:52] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:00] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:08:00] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:08:00 CST 2018
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-6
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-6
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-6
+[14:08:00] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-6
+[14:08:00] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:08:22] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:30] JobRunShell - Calling execute on job com.monk.sbbook.timers.GoodStockCheckTimer.ed87b5e9-4f46-4603-ba08-97ed20048cbb
+[14:08:30] GoodStockCheckTimer - 分布式节点quartz-cluster-node-first，执行库存检查定时任务，执行时间：{}Tue May 15 14:08:30 CST 2018
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_Worker-7
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_Worker-7
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_Worker-7
+[14:08:30] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_Worker-7
+[14:08:30] QuartzSchedulerThread - batch acquisition of 1 triggers
+[14:08:42] QuartzScheduler - Scheduler schedulerFactoryBean_$_wjfdeiMac.local1526364323613 paused.
+[14:08:42] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is desired by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:42] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' is being obtained: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:42] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' given to: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:42] QuartzScheduler - Scheduler schedulerFactoryBean_$_wjfdeiMac.local1526364323613 shutting down.
+[14:08:42] QuartzScheduler - Scheduler schedulerFactoryBean_$_wjfdeiMac.local1526364323613 paused.
+[14:08:42] SimpleThreadPool - Shutting down threadpool...
+[14:08:42] SimpleThreadPool - Shutdown of threadpool complete.
+[14:08:42] QuartzScheduler - Scheduler schedulerFactoryBean_$_wjfdeiMac.local1526364323613 shutdown complete.
+[14:08:42] SessionFactoryImpl - HHH000031: Closing
+[14:08:42] CascadeStyles - External cascade style registration [persist : STYLE_PERSIST] overrode base registration [STYLE_PERSIST_SKIPLAZY]
+[14:08:42] AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[14:08:42] BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+[14:08:42] StdRowLockSemaphore - Lock 'TRIGGER_ACCESS' returned by: schedulerFactoryBean_QuartzSchedulerThread
+[14:08:42] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[14:08:42] HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4db71969: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5914391b: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@556469a7: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4e602097: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@569a19ec: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2a36d89a: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@271a9c3e: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4e0f527b: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4d8016b7: (connection evicted)
+[14:08:42] PoolBase - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@481a8ea7: (connection evicted)
+[14:08:42] HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[14:08:42] HikariDataSource - HikariPool-1 - Shutdown completed.
