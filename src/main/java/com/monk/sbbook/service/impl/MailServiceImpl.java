@@ -1,4 +1,4 @@
-package com.monk.sbbook.service;
+package com.monk.sbbook.service.impl;
 
 import com.monk.sbbook.dao.MailService;
 import com.monk.sbbook.entity.Email;

@@ -1,5 +1,7 @@
 package com.monk.sbbook.timers;
 
+import com.monk.sbbook.entity.JobInfo;
+import com.monk.sbbook.service.JobService;
 import org.quartz.JobDetail;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -7,10 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.QuartzJobBean;
-import
 
-import javax.print.attribute.standard.JobName;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 商品库存检查定时任务
@@ -27,6 +28,8 @@ public class GoodStockCheckTimer
     extends QuartzJobBean
 {
 
+    @Autowired
+    private JobService jobService;
     /**
      * logback
      */
@@ -48,6 +51,9 @@ public class GoodStockCheckTimer
 //        job下次触发时间
         logger.info(jobName + " triggle at " + jobExecutionContext.getNextFireTime());
 
+        JobInfo jobInfo = new JobInfo();
+        List<JobInfo> list = jobService.listJobInfo(jobInfo, 0, 0);
+        logger.info("列表" + list.toString());
     }
 
 }

@@ -2,7 +2,7 @@ package com.monk.sbbook.controller;
 
 import com.monk.sbbook.result.pojo.JsonResult;
 import com.monk.sbbook.result.pojo.Result;
-import com.monk.sbbook.service.UserService;
+import com.monk.sbbook.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

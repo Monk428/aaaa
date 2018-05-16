@@ -1,7 +1,7 @@
 package com.monk.sbbook;
 
 import com.monk.sbbook.entity.Email;
-import com.monk.sbbook.service.MailServiceImpl;
+import com.monk.sbbook.service.impl.MailServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

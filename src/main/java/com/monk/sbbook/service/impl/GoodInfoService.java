@@ -1,8 +1,9 @@
-package com.monk.sbbook.service;
+package com.monk.sbbook.service.impl;
 
 
 import com.monk.sbbook.dao.GoodInfoRepository;
 import com.monk.sbbook.entity.GoodInfoEntity;
+import com.monk.sbbook.entity.JobInfo;
 import com.monk.sbbook.timers.GoodAddTimer;
 import com.monk.sbbook.timers.GoodSecKillRemindTimer;
 import com.monk.sbbook.timers.GoodStockCheckTimer;
@@ -10,8 +11,11 @@ import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
+import javax.management.Query;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 
@@ -123,4 +127,5 @@ public class GoodInfoService
         //将触发器与任务绑定到调度器内
         scheduler.scheduleJob(jobDetail,trigger);
     }
+
 }

@@ -1,7 +1,7 @@
 package com.monk.sbbook.controller;
 
 import com.monk.sbbook.entity.GoodInfoEntity;
-import com.monk.sbbook.service.GoodInfoService;
+import com.monk.sbbook.service.impl.GoodInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
