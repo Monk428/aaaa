@@ -28,8 +28,6 @@ public class GoodStockCheckTimer
     extends QuartzJobBean
 {
 
-    @Autowired
-    private JobService jobService;
     /**
      * logback
      */
@@ -43,7 +41,8 @@ public class GoodStockCheckTimer
         JobDetail jobDetail = jobExecutionContext.getJobDetail();
 //        获取job名称
         String jobName = jobDetail.getClass().getName();
-        logger.info("Job Name: " + jobDetail.getClass().getSimpleName());
+        logger.info("Job Name: " + jobName);
+
 //        获取job类
         logger.info("Job Class: " + jobDetail.getJobClass());
 //        job开始时间
@@ -51,9 +50,6 @@ public class GoodStockCheckTimer
 //        job下次触发时间
         logger.info(jobName + " triggle at " + jobExecutionContext.getNextFireTime());
 
-        JobInfo jobInfo = new JobInfo();
-        List<JobInfo> list = jobService.listJobInfo(jobInfo, 0, 0);
-        logger.info("列表" + list.toString());
     }
 
 }

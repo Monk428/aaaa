@@ -38,7 +38,7 @@ public interface DynamicQuery {
      * @param <T>
      * @return
      */
-    <T> List<T> nativeQueryListModel(Class<T> resultClass, String nativeSql, Object... params);
+    <T> List<T>  nativeQueryListModel(Class<T> resultClass, String nativeSql, Object... params);
 
     /**
      * 执行nativeSql统计查询

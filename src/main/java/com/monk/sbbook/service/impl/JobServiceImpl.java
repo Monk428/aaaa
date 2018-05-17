@@ -20,7 +20,7 @@ public class JobServiceImpl implements JobService {
         StringBuffer nativeSql = new StringBuffer();
         nativeSql.append("SELECT job.JOB_NAME as jobName,job.JOB_GROUP as jobGroup,job.DESCRIPTION as description,job.JOB_CLASS_NAME as jobClassName,");
         nativeSql.append("cron.CRON_EXPRESSION as cronExpression,tri.TRIGGER_NAME as triggerName,tri.TRIGGER_STATE as triggerState,");
-        nativeSql.append("job.JOB_NAME as oldJobName,job.JOB_GROUP as logJobGroup ");
+        nativeSql.append("job.JOB_NAME as oldJobName,job.JOB_GROUP as oldJobGroup ");
         nativeSql.append("FROM qrtz_job_details AS job LEFT JOIN qrtz_triggers AS tri ON job.JOB_NAME = tri.JOB_NAME ");
         nativeSql.append("LEFT JOIN qrtz_cron_triggers AS cron ON cron.TRIGGER_NAME = tri.TRIGGER_NAME ");
         nativeSql.append("WHERE tri.TRIGGER_TYPE = 'CRON'");

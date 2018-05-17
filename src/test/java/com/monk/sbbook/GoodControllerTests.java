@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class QuartzJobInfoTests {
+public class GoodControllerTests {
     /**
      * 模拟mvc对象
      */
@@ -54,4 +54,20 @@ public class QuartzJobInfoTests {
         result.getResponse().setCharacterEncoding("UTF-8");
         System.out.println(result.getResponse().getContentAsString());
     }
+
+    /**
+     * 测试查询所有商品
+     */
+    @Test
+    public void findAllGood() throws Exception
+    {
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/good/findAll")
+        )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().is(200))
+                .andReturn();
+        result.getResponse().setCharacterEncoding("UTF-8");
+        System.out.println("/good/findAll" + result.getResponse().getContentAsString());
+    }
+
 }

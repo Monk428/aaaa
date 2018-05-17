@@ -63,6 +63,14 @@ public class GoodInfoService
     }
 
     /**
+     * 获取所有商品列表
+     */
+    public List<GoodInfoEntity> queryAllGood()
+    {
+        return goodInfoRepository.findAll();
+    }
+
+    /**
      * 构建创建商品定时任务
      */
     public void buildCreateGoodTimer() throws Exception
