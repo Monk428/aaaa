@@ -1,9 +1,8 @@
 package com.monk.sbbook.service.impl;
 
 
-import com.monk.sbbook.dao.GoodInfoRepository;
+import com.monk.sbbook.dao.GoodInfoRepositoryDao;
 import com.monk.sbbook.entity.GoodInfoEntity;
-import com.monk.sbbook.entity.JobInfo;
 import com.monk.sbbook.timers.GoodAddTimer;
 import com.monk.sbbook.timers.GoodSecKillRemindTimer;
 import com.monk.sbbook.timers.GoodStockCheckTimer;
@@ -11,24 +10,14 @@ import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
 
-import javax.management.Query;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 
 /**
- * 商品业务逻辑
- * ========================
- *
- * @author 恒宇少年
- * Created with IntelliJ IDEA.
- * Date：2017/11/5
- * Time：15:04
- * 码云：http://git.oschina.net/jnyqy
- * ========================
+ * 商品业务逻辑，并创建定时时间
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -43,7 +32,7 @@ public class GoodInfoService
      * 商品数据接口
      */
     @Autowired
-    private GoodInfoRepository goodInfoRepository;
+    private GoodInfoRepositoryDao goodInfoRepository;
 
     /**
      * 保存商品基本信息

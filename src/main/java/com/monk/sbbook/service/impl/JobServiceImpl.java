@@ -9,6 +9,9 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+/**
+ * Quartz的job的jpa查询指令
+ */
 @Service("jobService")
 public class JobServiceImpl implements JobService {
 

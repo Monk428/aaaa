@@ -1,6 +1,6 @@
 package com.monk.sbbook.service.impl;
 
-import com.monk.sbbook.dao.MailService;
+import com.monk.sbbook.service.MailService;
 import com.monk.sbbook.entity.Email;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,9 @@ import org.slf4j.Logger;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+/**
+ * 邮件发送服务
+ */
 @Service
 public class MailServiceImpl implements MailService {
 

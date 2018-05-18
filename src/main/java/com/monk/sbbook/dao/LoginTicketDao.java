@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * Token验证jpa接口
+ */
 public interface LoginTicketDao extends JpaRepository<LoginTicket, Long>{
 
     LoginTicket findByTicket(String ticket);

@@ -10,14 +10,6 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 /**
  * 商品秒杀提醒定时器
  * 为关注该秒杀商品的用户进行推送提醒
- * ========================
- *
- * @author 恒宇少年
- * Created with IntelliJ IDEA.
- * Date：2017/11/12
- * Time：9:23
- * 码云：http://git.oschina.net/jnyqy
- * ========================
  */
 public class GoodSecKillRemindTimer
 extends QuartzJobBean

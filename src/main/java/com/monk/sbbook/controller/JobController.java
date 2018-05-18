@@ -17,6 +17,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Quartz管理
+ */
 
 @RestController
 @RequestMapping(value="/job")

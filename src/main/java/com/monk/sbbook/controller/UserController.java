@@ -10,6 +10,9 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
+/**
+ * 用户注册管理
+ */
 @RestController
 @RequestMapping("/verify")
 public class UserController {

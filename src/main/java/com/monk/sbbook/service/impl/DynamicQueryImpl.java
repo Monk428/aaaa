@@ -13,6 +13,9 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.List;
 
+/**
+ * 动态JPA增强
+ */
 @SuppressWarnings("deprecation")
 @Repository
 public class DynamicQueryImpl implements DynamicQuery{

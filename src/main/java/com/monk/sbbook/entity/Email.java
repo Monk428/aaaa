@@ -3,13 +3,20 @@ package com.monk.sbbook.entity;
 import java.io.Serializable;
 import java.util.HashMap;
 
+/**
+ * 邮件发送实体
+ */
 public class Email implements Serializable{
     private static final long serialVersionUID = 1L;
 
+    //接收邮件地址
     private String recEmail;
+    //邮件主题
     private String subject;
+    //邮件内容
     private String content;
 
+    //模板
     private String template;
     private HashMap<String, String> kvMap;
 

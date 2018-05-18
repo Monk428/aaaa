@@ -3,6 +3,9 @@ package com.monk.sbbook.entity;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * Token相关
+ */
 @Entity
 public class LoginTicket {
 //    @Id

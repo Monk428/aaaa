@@ -1,8 +1,8 @@
 package com.monk.sbbook.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
+/**
+ * 定时任务
+ */
 public class JobInfo {
     private String jobName;//任务名称
     private String jobGroup;//任务分组

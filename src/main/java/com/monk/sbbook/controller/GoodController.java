@@ -12,14 +12,7 @@ import javax.servlet.http.Cookie;
 import java.util.List;
 
 /**
- * ========================
- *
- * @author 恒宇少年
- * Created with IntelliJ IDEA.
- * Date：2017/11/5
- * Time：15:02
- * 码云：http://git.oschina.net/jnyqy
- * ========================
+ * 商品管理页面
  */
 @RestController
 @RequestMapping(value = "/good")

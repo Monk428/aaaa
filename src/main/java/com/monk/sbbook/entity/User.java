@@ -3,6 +3,9 @@ package com.monk.sbbook.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * 用户相关
+ */
 @Entity
 public class User implements Serializable {
 

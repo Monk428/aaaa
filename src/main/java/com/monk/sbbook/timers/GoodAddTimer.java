@@ -10,14 +10,6 @@ import java.util.Date;
 
 /**
  * 商品添加定时任务实现类
- * ========================
- * Created with IntelliJ IDEA.
- * User：恒宇少年
- * Date：2017/11/5
- * Time：14:47
- * 码云：http://git.oschina.net/jnyqy
- * ========================
- * @author 恒宇少年
  */
 public class GoodAddTimer
     extends QuartzJobBean

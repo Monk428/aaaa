@@ -15,14 +15,6 @@ import java.util.List;
 
 /**
  * 商品库存检查定时任务
- * ========================
- *
- * @author 恒宇少年
- * Created with IntelliJ IDEA.
- * Date：2017/11/5
- * Time：15:47
- * 码云：http://git.oschina.net/jnyqy
- * ========================
  */
 public class GoodStockCheckTimer
     extends QuartzJobBean
