@@ -10,7 +10,6 @@ import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -30,7 +29,6 @@ public class JobController
 //
 	//加入Qulifier注解，通过名称注入bean
 	@Autowired
-    @Qualifier("Scheduler")
 	private Scheduler scheduler;
 
     @Autowired
