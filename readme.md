@@ -2,6 +2,7 @@
 本项目主要用于学习spring-boot的使用，在此基础上，结合购买的阿里云服务器，搭建个人服务器。
 
 #点滴
+![](https://xnstatic-1253397658.file.myqcloud.com/SpringBootBucket.png)
 
 ##jsp
 application.properties中配置前向及后向拦截。
