@@ -14,7 +14,7 @@
     $('#submit').click(function () {
         $.ajax({
             type: "POST",
-            url: '/verify/getInfo',
+            url: 'http://127.0.0.1:8080/verify/getInfo',
             data: '',
             dataType: "json",
             success: function (data) {

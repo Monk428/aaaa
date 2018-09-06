@@ -19,15 +19,25 @@ public class UserControllerTests {
 	@Test
 	public void contextLoads() throws Exception{
 		User user = new User();
-		user.setId(1L);
-		user.setUsername("www4");
+//		user.setId(1L);
+		user.setUsername("www");
 		user.setPassword("3333111");
 		user.setEmail("ccccc");
 		userDao.saveAndFlush(user);
 
-		userDao.updateUsernameById("www4",1L);
+		System.out.println("首次: " + userDao.findByUsername("www"));
 
-		System.out.print("id："+ userDao.findByUsername("www4").getId());
+
+		userDao.updateUserName("www5",19L);
+		System.out.print("id："+ userDao.findByUsername("www5").get(0).getId());
+
+		//JPA  这种情况，只会创新新的记录
+		User user2 = new User();
+		user2.setUsername("www5");
+		user2.setPassword("1232131");
+		user2.setEmail("abcdefg");
+		userDao.saveAndFlush(user2);
+
 
 //		Assert.assertEquals(1, userDao.findAll().size());
 	}

@@ -20,7 +20,7 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
-    public User getUserByName(String name) {
+    public List<User> getUserByName(String name) {
         return userDao.findByUsername(name);
     }
 
@@ -52,7 +52,7 @@ public class UserService {
             return map;
         }
 
-        User u = userDao.findByUsername(username);
+        List<User> u = userDao.findByUsername(username);
         if (u!=null) {
             map.put("msg", "用户名被占用");
             return map;
@@ -75,6 +75,15 @@ public class UserService {
     }
 
     public Map<String,String> login(String username, String password){
+
+        // 只要再次点击登录，就要清除ticket
+        //此处需要清除ticket
+        List<User> userList = userDao.findByUsername(username);
+        User u = userList.get(0);
+        if( u != null) {
+            this.clearTicket(u.getId());
+        }
+
         Map<String,String> map = new HashMap<>();
         if (StringUtils.isEmpty(username)){
             map.put("msg","用户名不能为空");
@@ -86,7 +95,6 @@ public class UserService {
             return map;
         }
 
-        User u = userDao.findByUsername(username);
         if (u==null){
             map.put("msg","用户名不存在");
             return map;
@@ -111,6 +119,14 @@ public class UserService {
      */
     public void logout(String ticket){
         loginTicketDao.updateStatusByTicket(1, ticket);
+    }
+
+    /**
+     * 通过userid清除ticket
+     *
+     */
+    public void clearTicket(Long userId) {
+        loginTicketDao.updateStatusByUserId(1, userId);
     }
 
     /**

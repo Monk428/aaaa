@@ -60,7 +60,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/getInfo", method = RequestMethod.POST)
-    public Result getInfo(@CookieValue("ticket") String tick) {
+    public Result getInfo() {
         return JsonResult.genSuccessResult();
     }
 

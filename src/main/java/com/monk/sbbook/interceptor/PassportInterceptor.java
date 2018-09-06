@@ -40,22 +40,29 @@ public class PassportInterceptor implements HandlerInterceptor{
         }
         if (ticket!=null){
             LoginTicket loginTicket = loginTicketDao.findByTicket(ticket);
+            // 判断ticket合法性
             if (loginTicket==null||loginTicket.getExpired().before(new Date())||loginTicket.getStatus()!=0){
-
-                response.setCharacterEncoding("UTF-8");
-                response.setContentType("application/json; charset=utf-8");
-
-
-//                返回json
-                String js = JsonResult.genFailResult("没登录").toString();
-                PrintWriter out = response.getWriter();
-                out.print(js);
-                out.flush();
-                out.close();
-
-                return false;
+               return authorFailed(response);
             }
+        } else {
+            //没有ticket
+            return authorFailed(response);
         }
         return true;
+    }
+
+    private boolean authorFailed(HttpServletResponse response) throws Exception {
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json; charset=utf-8");
+
+//                返回json
+        String js = JsonResult.genFailResult("没登录").toString();
+        PrintWriter out = response.getWriter();
+        out.print(js);
+        out.flush();
+        out.close();
+
+        return false;
     }
 }
